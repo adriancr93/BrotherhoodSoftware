@@ -1,0 +1,53 @@
+-- MySQL dump 10.13  Distrib 8.0.23, for Win64 (x86_64)
+--
+-- Host: localhost    Database: brotherhoodsoftware
+-- ------------------------------------------------------
+-- Server version	8.0.23
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `wp_term_relationships`
+--
+
+DROP TABLE IF EXISTS `wp_term_relationships`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `wp_term_relationships` (
+  `object_id` bigint unsigned NOT NULL DEFAULT '0',
+  `term_taxonomy_id` bigint unsigned NOT NULL DEFAULT '0',
+  `term_order` int NOT NULL DEFAULT '0',
+  PRIMARY KEY (`object_id`,`term_taxonomy_id`),
+  KEY `term_taxonomy_id` (`term_taxonomy_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `wp_term_relationships`
+--
+
+LOCK TABLES `wp_term_relationships` WRITE;
+/*!40000 ALTER TABLE `wp_term_relationships` DISABLE KEYS */;
+INSERT INTO `wp_term_relationships` VALUES (1,1,0),(471,18,0),(471,19,0),(471,20,0),(471,21,0),(471,22,0),(471,24,0),(471,25,0),(471,31,0),(471,38,0),(473,19,0),(473,25,0),(473,37,0),(473,38,0),(475,19,0),(475,20,0),(475,22,0),(475,24,0),(475,29,0),(475,35,0),(475,37,0),(477,18,0),(477,19,0),(477,21,0),(477,29,0),(477,32,0),(477,35,0),(479,19,0),(479,27,0),(489,18,0),(489,19,0),(489,21,0),(489,25,0),(489,31,0),(489,38,0),(491,19,0),(491,25,0),(491,37,0),(491,38,0),(493,17,0),(493,19,0),(493,35,0),(493,37,0),(493,38,0),(495,19,0),(495,25,0),(495,31,0),(495,33,0),(1834,19,0),(1834,29,0),(1834,32,0),(1834,35,0),(4074,36,0),(4074,39,0),(4081,39,0),(4092,39,0),(4094,36,0),(4094,39,0),(4096,34,0),(4096,39,0),(4098,39,0),(8567,17,0),(8567,19,0),(8567,29,0),(8567,35,0),(8567,37,0),(8607,19,0),(8607,29,0),(8607,32,0),(8607,35,0),(11179,19,0),(11179,20,0),(11179,22,0),(11179,24,0),(11179,35,0),(11179,37,0),(11179,38,0),(11753,48,0),(11754,46,0),(11757,46,0),(11760,46,0),(11761,46,0),(11762,46,0),(11763,46,0),(11764,46,0),(11765,46,0),(11769,46,0),(11789,2,0),(11789,8,0),(11789,44,0),(11800,2,0),(11800,42,0),(11801,2,0),(11801,42,0),(11802,2,0),(11802,42,0),(11809,2,0),(11809,15,0),(11810,2,0),(11810,15,0),(11811,2,0),(11811,43,0),(11877,23,0),(11879,19,0),(11880,2,0),(11880,8,0),(11880,42,0),(11880,44,0),(11881,2,0),(11881,44,0),(11882,2,0),(11882,42,0),(11883,2,0),(11883,41,0),(11883,42,0),(11884,2,0),(11884,42,0),(11884,44,0),(11885,2,0),(11885,42,0),(11886,2,0),(11886,42,0),(11888,47,0),(11889,47,0),(11890,47,0),(11891,48,0),(11918,46,0),(11920,46,0),(11993,46,0),(11995,46,0),(12003,46,0);
+/*!40000 ALTER TABLE `wp_term_relationships` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-04-29 22:46:24
